@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha kitob-soni 10 dan kichik mualliflar ro'yxati!</h1>
+      <br>
+      {% for kichik in kichiklar %}
+      <br>
+      <h1>{{kichik.id}}. {{kichik.ism}}({{kichik.jins.tirik}})</h1>
+      {% endfor %}
+</body>
+</body>
+</html>

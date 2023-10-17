@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sahifa</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha sahifasi eng kop 3 ta kitob ro'yxati!</h1>
+      <br>
+      {% for sahifa in sahifalar %}
+      <br>
+      <h1>{{sahifa.id}}. {{sahifa.nom}}({{sahifa.janr.muallif}})</h1>
+      {% endfor %}
+</body>
+</html>

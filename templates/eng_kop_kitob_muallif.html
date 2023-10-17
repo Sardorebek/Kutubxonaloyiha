@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob_Muallif</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha kitobi eng kop 3 ta muallif ro'yxati!</h1>
+      <br>
+      {% for kitob_lar in kitob_muallif %}
+      <br>
+      <h1>{{kitob_lar.id}}. {{kitob_lar.nom}}({{kitob_lar.janr.muallif}})</h1>
+      {% endfor %}
+</body>
+</html>

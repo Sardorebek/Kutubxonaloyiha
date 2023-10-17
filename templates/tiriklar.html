@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiriklar</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha tiriklar ro'yxati!</h1>
+      <br>
+      {% for tirik in tiriklar %}
+      <br>
+      <h1>{{tirik.id}}. {{tirik.nom}}({{tirik.jins.tugilgan_sana}})</h1>
+      {% endfor %}
+</body>
+</html>

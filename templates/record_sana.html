@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record_Sahifa</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha Recordlarni olingan_sana va  eng oxirgi 3 ta ro'yxati!</h1>
+      <br>
+      {% for recordlar in record %}
+      <br>
+      <h1>{{recordlar.id}}. {{recordlar.talaba}}({{recordlar.kitob.olingan_sana}})</h1>
+      {% endfor %}
+</body>
+</html>

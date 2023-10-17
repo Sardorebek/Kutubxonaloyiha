@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitiruvchi talabalar</title>
+</head>
+<body>
+      <h1>Kutubxonadagi barcha talabalar ro'yxati</h1>
+      <br><br>
+      <hr>
+      <form method="get">
+          <input type="text" placeholder="Ism kiriting:" name="qidirish_sozi">
+          <button>Qidirish</button>
+      </form>
+      <br>
+      <ol>
+          {% for talaba in talabalar %}
+          <br>
+          <h2><li>{{talaba.ism}} ({{talaba.kurs}}--kurs)</li></h2>
+          <a href="/talaba_ochir/{{talaba.id}}">
+              <button>O'chirish</button></a>
+          {% endfor %}
+      </ol>
+</body>
+</html>

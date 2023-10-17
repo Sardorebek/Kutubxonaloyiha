@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mualliflar</title>
+</head>
+<body>
+        <h1>Loyihamizda barcha Muallifga tegishli ma'lumotlar chiqarildi!</h1>
+        <br><br>
+        <hr>
+        <form method="get">
+            <input type="text"placeholder="Ism kiriting:" name="qidirish_so'zi">
+            <button>Qidirish</button>
+        </form>
+        <br>
+        {% for muallif in mualliflar %}
+        <br>
+        <h1>{{muallif.id}}. {{muallif.ism}}({{muallif.jins}})</h1>
+        <a href="/muallif_ochir/{{muallif.id}}">
+            <button>O'chirish</button>
+        </a>
+        {% endfor %}
+</body>
+</html>

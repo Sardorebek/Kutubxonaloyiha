@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Tizimdagi ayol mualliflarga tegishli barcha ro'yxati</h1>
+      <br><br>
+      {% for book in books %}
+      <br>
+      <h1>{{book.id}}. {{book.nom}}({{book.muallif.ism}})</h1>
+      {% endfor %}
+</body>
+</html>

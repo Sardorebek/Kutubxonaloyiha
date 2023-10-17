@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha recordlar ro'yxati</h1>
+      <br><br>
+      <hr>
+       <form method="get">
+          <input type="text" placeholder="Ism kiriting:" name="qidirish_sozi">
+          <button>Qidirish</button>
+      </form>
+      <br>
+      {% for record in recordlar %}
+      <br>
+      <h1>{{record.id}}. {{record.talaba}}({{record.kitob}}). {{record.olingan_sana}}</h1>
+      <a href="/record_ochir/{{record.id}}">
+          <button>O'chirish</button>
+      </a>
+      {% endfor %}
+</body>
+</html>

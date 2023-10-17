@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Janr</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha Badiy kitoblar ro'yxati!</h1>
+      <br>
+      {% for janr in janrlar %}
+      <br>
+      <h1>{{janr.id}}. {{janr.nom}}({{janr.sahifa.muallif}})</h1>
+      {% endfor %}
+</body>
+</html>
